@@ -16,6 +16,7 @@ def limpar_tela():
     else:
         _ = system('clear')
 
+
 def game():
     limpar_tela()
     print("\nBem-Vindo(a) ao jogo da forca!")
@@ -42,7 +43,7 @@ def game():
         # Print
         print(" ".join(letras_descobertas))
         print("\nChances restantes: ", chances)
-        print("Letras erradas: "," ".join(letras_erradas))
+        print("Letras erradas: ", " ".join(letras_erradas))
 
         # Tentativas
         tentativa = input("\nDigite uma letra: ").lower()
@@ -51,7 +52,7 @@ def game():
         if tentativa in palavra:
             index = 0
             for letra in palavra:
-                if tentativa == letra: 
+                if tentativa == letra:
                     letras_descobertas[index] = letra
                 index += 1
         else:
@@ -66,7 +67,8 @@ def game():
     if "_" in letras_descobertas:
         print("\nVocê perdeu, a palavra era: ", palavra)
 
+
 # Bloco main
 if __name__ == "__main__":
     game()
-    print("\nParabéns. Você está aprendendo programação em Python com a DSA. :)\n")
+    print("\nParabéns.Você está aprendendo programação em Python com a DSA.:)")
