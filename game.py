@@ -57,3 +57,11 @@ def game():
         else:
             chances -= 1
             letras_erradas.append(tentativa)
+       
+        # Condicional
+        if "_" not in letras_descobertas:
+            print("\nVocê venceu, a palavra era: ", palavra)
+            break
+
+    if "_" in letras_descobertas:
+        print("\nVocê perdeu, a palavra era: ", palavra)
