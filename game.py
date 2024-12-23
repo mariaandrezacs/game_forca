@@ -36,7 +36,7 @@ def game():
     # Lista para as letras erradas
     letras_erradas = []
 
-    # Loop enquanto número de chances for maior que zero 
+    # Loop enquanto número de chances for maior que zero
     while chances > 0:
 
         # Print
@@ -57,7 +57,7 @@ def game():
         else:
             chances -= 1
             letras_erradas.append(tentativa)
-       
+
         # Condicional
         if "_" not in letras_descobertas:
             print("\nVocê venceu, a palavra era: ", palavra)
@@ -65,3 +65,8 @@ def game():
 
     if "_" in letras_descobertas:
         print("\nVocê perdeu, a palavra era: ", palavra)
+
+# Bloco main
+if __name__ == "__main__":
+    game()
+    print("\nParabéns. Você está aprendendo programação em Python com a DSA. :)\n")
